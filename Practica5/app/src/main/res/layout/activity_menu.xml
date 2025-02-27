@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
     tools:context=".MenuActivity">
 
     <ImageView
@@ -13,15 +13,20 @@
         android:layout_height="wrap_content"
         android:src="@drawable/grupo2"
         android:layout_marginTop="40dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="@string/our_menu"
+        android:textAllCaps="true"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"/>
+        />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -40,20 +45,21 @@
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_paddings"
-            android:id="@+id/btnAntojitos"/>
-
+            android:id="@+id/btnAntojitos"
+            />
         <Button
-            android:id="@+id/btnEspecialidades"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginRight="@dimen/menu_buttons_margin"
-            android:background="@drawable/first_gradient"
-            android:paddingHorizontal="@dimen/menu_buttons_paddings"
-            android:paddingVertical="@dimen/menu_buttons_paddings"
             android:text="@string/especialidades"
             android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            tools:ignore="TextSizeCheck" />
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:id="@+id/btnEspecialidades"
+            />
+
         <Button
             android:text="@string/combinations"
             android:textColor="@color/white"
@@ -64,7 +70,8 @@
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_paddings"
-            android:id="@+id/btnCombinations"/>
+            android:id="@+id/btnCombinations"
+            />
         <Button
             android:text="@string/tortas"
             android:textColor="@color/white"
@@ -75,7 +82,8 @@
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_paddings"
-            android:id="@+id/btnTortas"/>
+            android:id="@+id/btnTortas"
+            />
         <Button
             android:text="@string/sopas"
             android:textColor="@color/white"
@@ -86,7 +94,8 @@
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_paddings"
-            android:id="@+id/btnSopas"/>
+            android:id="@+id/btnSopas"
+            />
         <Button
             android:text="@string/drinks"
             android:textColor="@color/white"
@@ -97,8 +106,7 @@
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
             android:paddingVertical="@dimen/menu_buttons_paddings"
-            android:id="@+id/btnDrinks"/>
-
+            android:id="@+id/btnDinks"
+            />
     </GridLayout>
-
 </LinearLayout>

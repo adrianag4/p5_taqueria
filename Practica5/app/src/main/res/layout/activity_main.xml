@@ -2,65 +2,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="@color/crema"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/crema"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:src="@drawable/portales"
-        android:scaleType="fitXY"
-        tools:ignore="MissingConstraints"
-    />
+        android:layout_height="461dp"
+        android:src="@drawable/grupo1"
+        android:scaleType="fitCenter"
+        />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:textColor="@color/verde"
         android:fontFamily="sans-serif-light"
         android:text="@string/welcome_text"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-    />
+        />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:textSize="15sp"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
+        android:layout_marginTop="10dp"
         android:textColor="@color/verde"
         android:text="@string/welcome_description"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
         />
-    
+
     <Button
+        android:id="@+id/btnGetStarted"
         android:layout_width="219dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
         android:text="@string/button_start"
         android:background="@drawable/round_button"
         android:textColor="@color/white"
-        android:layout_gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:id="@+id/btn_get_started"
-    />
+        android:layout_gravity="center_horizontal"
+        />
 
 </LinearLayout>
